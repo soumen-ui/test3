@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<UL class="cubox" style="background:red;">
+
+<LI id="" class="ubox "  style="background:green; padding:100px 20px"><h2>ccccc</h2></LI>
+<LI class="example">Antarctica</LI>
+<LI>Asia</LI>
+
+</UL>
+
+
+
+<script>
+xa = document.querySelector(".ubox ");
+
+elemHeight = xa.offsetHeight;
+
+document.getElementsByClassName("example")[0].style.marginTop = -elemHeight + "px";
+
+</script>
+
+
+<br />
+<br />
+<br />
+<br />
+<style>
+.bl_bg{
+	background:#0C3;}
+</style>
+<div id="main">
+
+
+  <div class="cnt">
+  
+    <div class=" bl_bg">
+    <h1>h1</h1>
+    <p>Content for  class " bl_bg" Goes Here</p>
+    <a href="w3schools.com" >class="prt_anch"w3schools</a>
+    </div>
+    
+    <div class=" bl_bg">
+    <h1>h2</h1>
+    <p>Content for  class " bl_bg" Goes Here</p>
+    <a href="https://bootsnipp.com/user/snippets/mQEWq" class="prt_anch">boot</a>
+    </div>
+  </div>
+  
+  
+ 
+  
+  <div class="cnt">
+  
+    <div class=" bl_bg">
+    <h1>h2</h1>
+    <p>Content for  class " bl_bg" Goes Here</p>
+    <a href="https://bootsnipp.com/user/snippets/mQEWq" class="prt_anch">boot ttt</a>
+    </div>
+  </div>
+  
+  <div class="cnt">
+  
+    <div class=" bl_bg">
+    <h1>h3</h1>
+    <p>Content for  class " bl_bg" Goes Here</p>
+    <a href="http://development7051s.com/ujjwal/chokhidhani/product/lime-pickle/" class="prt_anch">choki</a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+        document.querySelectorAll("#main")[0].addEventListener("click", (e)=> {
+         
+			
+			 const x = e.target.closest(".bl_bg");
+			             const y = x.querySelectorAll('.prt_anch')[0];
+			
+            window.open(y.childNodes[1].href);
+        });
+		
+		
+		
+		//ch =  document.querySelectorAll('.bl_bg')[0];
+		//console.log(ch);		
+	
+    </script>
+</body>
+</html>
